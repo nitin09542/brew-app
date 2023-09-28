@@ -4,6 +4,7 @@ import 'package:brew/home-pages/HomeScreenView.dart';
 import 'package:brew/profile/ProfileScreen.dart';
 import 'package:flutter/material.dart';
 
+import 'cart-screens/card-swpe-screen.dart';
 import 'custom-bottom-naviigation.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
@@ -17,7 +18,7 @@ class _MyNavigationBarState extends State<MyNavigationBar> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    ProfileScreen(),
+    CardSwipe(),
     AddCartScreen(),
     ProfileScreen()
   ];

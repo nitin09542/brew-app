@@ -248,6 +248,7 @@ class HomePage extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage(item.imagePath),
                   fit: BoxFit.cover,
+
                 ),
               ),
             ),
