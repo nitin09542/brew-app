@@ -60,21 +60,40 @@ class _CardSwipeState extends State<CardSwipe> {
   Widget build(BuildContext context) {
     return  Scaffold(
         key: _scaffoldKey,
-        body: Container(
+        body:
+        Container(
             child: Column(children: [
               Container(
                 height: 550,
                 child: SwipeCards(
                   matchEngine: _matchEngine,
                   itemBuilder: (BuildContext context, int index) {
-                    return Container(
-                      alignment: Alignment.center,
-                      color: _swipeItems[index].content.color,
-                      child: Text(
-                        _swipeItems[index].content.text,
-                        style: TextStyle(fontSize: 100),
-                      ),
-                    );
+                    return
+
+                      Container(
+                        alignment: Alignment.center,
+                        color: _swipeItems[index].content.color,
+                        child: Column(
+                          children: [
+                            Text(
+                              _swipeItems[index].content.text,
+                              style: TextStyle(fontSize: 100),
+                            ),
+                            Text(
+                              _swipeItems[index].content.text,
+                              style: TextStyle(fontSize: 100),
+                            ),
+                            Text(
+                              _swipeItems[index].content.text,
+                              style: TextStyle(fontSize: 100),
+                            ),
+                            Text(
+                              _swipeItems[index].content.text,
+                              style: TextStyle(fontSize: 100),
+                            ),
+                          ],
+                        )
+                      );
                   },
                   onStackFinished: () {
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -109,7 +128,9 @@ class _CardSwipeState extends State<CardSwipe> {
                       child: Text("Like"))
                 ],
               )
-            ])));
+            ])),
+
+        );
 
   }
 
